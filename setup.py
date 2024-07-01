@@ -44,7 +44,7 @@ setup(
     python_requires= REQUIRES_PYTHON,
     url=URL,
     packages=find_packages(exclude='tests'),
-    package_data={'prediction_model':['VERSION']},
+    package_data={'prediction_model':['VERSION','datasets/train.csv','datasets/test.csv']},
     install_requires=list_reqs(),
     extra_require={},
     include_package_data=True,

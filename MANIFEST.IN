@@ -1,6 +1,9 @@
 include *.txt
 include *.md
 include *.py
+include *.pkl
+include *.csv 
+
 recursive-include ./prediction_model/*
 
 include prediction_model/datasets/*.csv
