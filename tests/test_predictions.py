@@ -1,0 +1,31 @@
+import sys
+import os 
+from pathlib import Path
+PACKAGE_ROOT = Path(os.path.abspath(os.path.dirname(__file__))).parent
+sys.path.append(str(PACKAGE_ROOT))
+
+import pytest
+from prediction_model.config import config
+from prediction_model.processing.data_handling import load_dataset
+from prediction_model.predict import generate_predictions
+
+# output should not be null
+# output should be str data time
+# output should be 'Y' or 'N' 
+# Fixtures --> functions before test functions
+
+@pytest.fixture
+def single_prediction():
+    test_dataset = load_dataset(config.TEST_FILE)
+    single_row = test_dataset[:1]
+    result = generate_predictions(single_row)
+    return result
+
+def test_single_pred(single_prediction):
+    assert single_prediction is not None
+
+def test_single_pred_str_type(single_prediction):
+    assert isinstance(single_prediction.get('Predicitons')[0],str)
+
+def test_single_pred_validate(single_prediction):
+    assert single_prediction.get('Predicitons')[0]=='Y'
