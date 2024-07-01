@@ -19,4 +19,5 @@ prediction_model/processing/__init__.py
 prediction_model/processing/data_handling.py
 prediction_model/processing/preprocessing.py
 prediction_model/trained_models/__init__.py
+prediction_model/trained_models/classification.pkl
 tests/test_predictions.py
