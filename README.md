@@ -18,4 +18,10 @@ This repository demonstrates the creation of a modular code package for a Machin
     peform_training()
     ```
 
-## Project Structure
+
+## Connect with Me
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/siddharthsingh5010/)
+[![Kaggle](https://img.shields.io/badge/Kaggle-Profile-blue?style=flat-square&logo=kaggle)](https://www.kaggle.com/siddharthsingh501)
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
